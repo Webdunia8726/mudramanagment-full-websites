@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MudraLegal Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome CDN -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* MudraLegal Section */
+        .mudralegal-section {
+            padding: 50px 15px;
+            background: #f9f9f9;
+        }
+
+        .mudralegal-title {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .mudralegal-title span {
+            color: #e74c3c;
+        }
+
+        .mudralegal-content {
+            font-size: 1.1rem;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+
+        .mudralegal-highlights {
+            margin-top: 20px;
+        }
+
+        .mudralegal-highlight-item {
+            font-size: 1.1rem;
+            color: #34495e;
+            margin-bottom: 10px;
+        }
+
+        .mudralegal-highlight-item i {
+            color: #27ae60;
+            margin-right: 10px;
+        }
+
+        .mudralegal-btn-visit {
+            display: inline-block;
+            margin-top: 20px;
+            background: #2c3e50;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .mudralegal-btn-visit:hover {
+            background: #e74c3c;
+            color: #fff;
+        }
+
+        .mudralegal-image {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .mudralegal-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .mudralegal-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .mudralegal-col {
+            flex: 0 0 48%;
+            max-width: 48%;
+        }
+
+        .mudralegal-col img {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            .mudralegal-col {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            .mudralegal-title {
+                font-size: 2rem;
+            }
+
+            .mudralegal-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- MudraLegal Section -->
+    <section class="mudralegal-section">
+        <div class="mudralegal-container">
+            <div class="mudralegal-row align-items-center">
+                <!-- Left Content -->
+                <div class="mudralegal-col">
+                    <h2 class="mudralegal-title">Explore Our Legal Expertise at <span>MudraLegal.com</span></h2>
+                    <p class="mudralegal-content">
+                        Get free legal opinion by our experienced Advocate Mandeep Singh, who started his career in 2008. 
+                        With a Masters in Finance, Masters in Law, and pursuing a Ph.D. on "Efficiency of RERA Act, 2016," 
+                        Mandeep Singh is a practicing advocate in Lucknow & NCR, specializing in Real Estate Disputes.
+                    </p>
+                    <p class="mudralegal-content">
+                        Visit our dedicated legal platform <strong>MudraLegal.com</strong> to learn more about our 
+                        <strong>Builder-Buyer Disputes</strong> and <strong>Relief-Oriented Services</strong>. 
+                        Your trusted partner for all real estate legal needs!
+                    </p>
+
+                    <!-- Highlights with Check Icons -->
+                    <div class="mudralegal-highlights">
+                        <div class="mudralegal-highlight-item"><i class="fas fa-check-circle"></i> Customised Legal Opinion</div>
+                        <div class="mudralegal-highlight-item"><i class="fas fa-check-circle"></i> Transparent Process</div>
+                        <div class="mudralegal-highlight-item"><i class="fas fa-check-circle"></i> Unquestionable Integrity</div>
+                    </div>
+
+                    <a href="https://mudralegal.com" target="_blank" class="mudralegal-btn-visit">Visit MudraLegal.com</a>
+                </div>
+
+                <!-- Right Image -->
+                <div class="mudralegal-col text-center">
+                    <img src="assets/images/mudralegal-banner.jpg" alt="MudraLegal" class="mudralegal-image img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
