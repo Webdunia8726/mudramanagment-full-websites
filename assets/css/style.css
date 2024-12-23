@@ -121,7 +121,7 @@ ul {
     text-align: center;
     overflow: hidden;
     z-index: 1;
-    background-color: #e93c05 !important;
+    background-color: #F7A341 !important;
     color: #fff !important;
     transition: 0.5s all ease;
     border-radius: 5px;
@@ -174,7 +174,7 @@ ul {
 
 .section-title .sub-title {
     display: block;
-    color: #e93c05;
+    color: #40BBE4;
     margin-bottom: 3px;
     font-weight: 600;
 }
@@ -189,7 +189,7 @@ ul {
 }
 
 .section-title.two .sub-title {
-    color: #fb2448;
+    color: #40BBE4;
 }
 
 .section-title.three .sub-title {
@@ -297,7 +297,7 @@ ul {
 .main-nav nav .navbar-nav .nav-item a:hover,
 .main-nav nav .navbar-nav .nav-item a:focus,
 .main-nav nav .navbar-nav .nav-item a.active {
-    color: #e93c05;
+    color: #40BBE4 !important;
 }
 
 .main-nav nav .navbar-nav .nav-item a i {
@@ -420,7 +420,7 @@ ul {
 .side-nav .consultant-btn {
     display: inline-block;
     color: #fff;
-    background-color: #e93c05;
+    background-color:#f7a341 !important;
     border-radius: 5px;
     padding: 12px 25px;
     font-weight: 600;
@@ -653,7 +653,7 @@ ul {
     position: absolute;
     top: 10px;
     left: 15px;
-    color: #e93c05;
+    color: #40BBE4;
     font-size: 50px;
     z-index: 1;
 }
@@ -678,7 +678,7 @@ ul {
 .about-area .about-content .bottom ul li p {
     margin-bottom: 0;
     font-weight: 600;
-    color: #e93c05;
+    color: #011a41;
 }
 
 .about-area .about-content .years {
@@ -1625,7 +1625,7 @@ ul {
 
 .faq-item .accordion li a.active {
     color: #fff;
-    background-color: #e93c05;
+    background-color: #40BBE4;
 }
 
 .faq-item .accordion li a.active i {
@@ -1649,7 +1649,7 @@ ul {
     height: 20px;
     line-height: 20px;
     text-align: center;
-    background-color: #e93c05;
+    background-color: #40BBE4;
     color: #fff;
 }
 
@@ -2155,7 +2155,7 @@ footer {
     font-size: 40px !important;
     border-radius: 50% !important;
     color: #fff !important;
-    background-color: #fb2448 !important;
+    background-color: #F7A341 !important;
     transition: 0.5s all ease;
 }
 
@@ -2176,7 +2176,7 @@ footer {
     font-size: 40px !important;
     border-radius: 50% !important;
     color: #fff !important;
-    background-color: #fb2448 !important;
+    background-color: #F7A341 !important;
     transition: 0.5s all ease;
 }
 
@@ -2220,7 +2220,7 @@ footer {
 }
 
 .about-area-two .about-content ul li i {
-    color: #fb2448;
+    color: #40BBE4;
     display: inline-block;
     font-size: 45px;
     line-height: 40px;
@@ -2340,7 +2340,7 @@ footer {
 
 .projects-item .inner .projects-btn {
     display: inline-block;
-    color: #fb2448;
+    color: #40BBE4;
     font-weight: 700;
 }
 
@@ -2405,7 +2405,7 @@ footer {
 
 .services-item-two .bottom .services-btn i {
     display: inline-block;
-    color: #fb2448;
+    color: #40BBE4;
     font-size: 20px;
     position: relative;
     top: 4px;
@@ -2413,9 +2413,9 @@ footer {
 
 .services-item-two .bottom .services-btn a {
     display: inline-block;
-    color: #fb2448;
+    color: #40BBE4;
     font-weight: 600;
-    border-bottom: 1px solid #fb2448;
+    border-bottom: 1px solid #40BBE4;
 }
 
 .services-item-two .bottom .services-btn a:hover {
@@ -2445,7 +2445,7 @@ footer {
     height: 0;
     left: 0;
     bottom: 0;
-    background-color: #fb2448;
+    background-color: #40BBE4;
     z-index: -1;
     transition: 0.5s all ease;
 }
@@ -2491,7 +2491,7 @@ footer {
 
 .projects-item-two .icon {
     display: inline-block;
-    color: #fb2448;
+    color: #40BBE4;
     font-size: 45px;
     line-height: 45px;
     margin-bottom: 15px;
@@ -2504,7 +2504,7 @@ footer {
 }
 
 .projects-item-two h3 a {
-    color: #fb2448;
+    color: #40BBE4;
 }
 
 .projects-item-two h3 a:hover {
@@ -2585,14 +2585,14 @@ footer {
     height: 135px;
     right: 0;
     top: 15px;
-    background-color: #fb2448;
+    background-color: #40BBE4;
 }
 
 .counter-item i {
     font-size: 55px;
     line-height: 55px;
     margin-bottom: 12px;
-    color: #fb2448;
+    color: #40BBE4;
     display: inline-block;
 }
 
@@ -4560,7 +4560,7 @@ footer {
 }
 
 .contact-info-item i {
-    color: #e93c05;
+    color: #00acee;
     display: inline-block;
     font-size: 55px;
     margin-bottom: 15px;
@@ -5404,6 +5404,7 @@ footer {
     padding: 30px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.4s, box-shadow 0.4s;
+    margin-top: 20px;
 }
 .team-card:hover {
     transform: scale(1.05);
@@ -5414,7 +5415,7 @@ footer {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #d7d9db;
+    border: 5px solid #40BBE4;
     margin: -75px auto 20px;
 }
 .profile-name {
@@ -5455,7 +5456,7 @@ footer {
 }
 
 .mudralegal-title span {
-    color: #e74c3c;
+    color: #40BBE4;
 }
 
 .mudralegal-content {
@@ -5485,7 +5486,7 @@ footer {
 .mudralegal-btn-visit {
     display: inline-block;
     margin-top: 20px;
-    background: #2c3e50;
+    background: #F7A341;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
