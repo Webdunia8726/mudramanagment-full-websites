@@ -1,151 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MudraLegal Section</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome CDN -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Hover Scroll and Full View</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
-        /* MudraLegal Section */
-        .mudralegal-section {
-            padding: 50px 15px;
-            background: #f9f9f9;
-        }
+    .image-container {
+      height: 300px; /* Fixed height for the image container */
+      overflow: hidden; /* Hide overflow */
+      position: relative;
+    }
 
-        .mudralegal-title {
-            font-size: 2.5rem;
-            color: #2c3e50;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
+    .image-container img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: transform 5s linear; /* Smooth scrolling effect */
+    }
 
-        .mudralegal-title span {
-            color: #e74c3c;
-        }
+    .image-container:hover img {
+      transform: translateY(-100%); /* Scroll to the top of the image */
+    }
 
-        .mudralegal-content {
-            font-size: 1.1rem;
-            color: #34495e;
-            margin-bottom: 15px;
-        }
+    .main-img-container {
+      margin-top: 50px;
+    }
 
-        .mudralegal-highlights {
-            margin-top: 20px;
-        }
+    /* Modal Styling */
+    .modal-img {
+      width: 100%;
+      height: auto;
+    }
 
-        .mudralegal-highlight-item {
-            font-size: 1.1rem;
-            color: #34495e;
-            margin-bottom: 10px;
-        }
+    .modal-content {
+      background: transparent;
+      border: none;
+      text-align: center;
+      position: relative;
+    }
 
-        .mudralegal-highlight-item i {
-            color: #27ae60;
-            margin-right: 10px;
-        }
+    .close-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+      background-color: black;
+   padding: 10px;
+   border-radius: 50%;
 
-        .mudralegal-btn-visit {
-            display: inline-block;
-            margin-top: 20px;
-            background: #2c3e50;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 1rem;
-        }
+    }
 
-        .mudralegal-btn-visit:hover {
-            background: #e74c3c;
-            color: #fff;
-        }
-
-        .mudralegal-image {
-            max-width: 100%;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .mudralegal-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-
-        .mudralegal-row {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .mudralegal-col {
-            flex: 0 0 48%;
-            max-width: 48%;
-        }
-
-        .mudralegal-col img {
-            width: 100%;
-        }
-
-        @media screen and (max-width: 768px) {
-            .mudralegal-col {
-                flex: 0 0 100%;
-                max-width: 100%;
-            }
-
-            .mudralegal-title {
-                font-size: 2rem;
-            }
-
-            .mudralegal-content {
-                font-size: 1rem;
-            }
-        }
-    </style>
+   
+  </style>
 </head>
 <body>
-    <!-- MudraLegal Section -->
-    <section class="mudralegal-section">
-        <div class="mudralegal-container">
-            <div class="mudralegal-row align-items-center">
-                <!-- Left Content -->
-                <div class="mudralegal-col">
-                    <h2 class="mudralegal-title">Explore Our Legal Expertise at <span>MudraLegal.com</span></h2>
-                    <p class="mudralegal-content">
-                        Get free legal opinion by our experienced Advocate Mandeep Singh, who started his career in 2008. 
-                        With a Masters in Finance, Masters in Law, and pursuing a Ph.D. on "Efficiency of RERA Act, 2016," 
-                        Mandeep Singh is a practicing advocate in Lucknow & NCR, specializing in Real Estate Disputes.
-                    </p>
-                    <p class="mudralegal-content">
-                        Visit our dedicated legal platform <strong>MudraLegal.com</strong> to learn more about our 
-                        <strong>Builder-Buyer Disputes</strong> and <strong>Relief-Oriented Services</strong>. 
-                        Your trusted partner for all real estate legal needs!
-                    </p>
 
-                    <!-- Highlights with Check Icons -->
-                    <div class="mudralegal-highlights">
-                        <div class="mudralegal-highlight-item"><i class="fas fa-check-circle"></i> Customised Legal Opinion</div>
-                        <div class="mudralegal-highlight-item"><i class="fas fa-check-circle"></i> Transparent Process</div>
-                        <div class="mudralegal-highlight-item"><i class="fas fa-check-circle"></i> Unquestionable Integrity</div>
-                    </div>
+<div class="container my-4 main-img-container">
+  <h2 class="text-center mb-4">Smooth Scroll Gallery with Full View</h2>
+  <div class="row g-3" id="image-row">
+    <div class="col-md-4">
+      <div class="image-container">
+        <img src="img-big.png" alt="Image 1" onclick="openModal(this.src)">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="image-container">
+        <img src="img-big.png" alt="Image 2" onclick="openModal(this.src)">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="image-container">
+        <img src="https://via.placeholder.com/300x400/33FF57" alt="Image 3" onclick="openModal(this.src)">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="image-container">
+        <img src="https://via.placeholder.com/300x400/5733FF" alt="Image 4" onclick="openModal(this.src)">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="image-container">
+        <img src="https://via.placeholder.com/300x400/FF33A6" alt="Image 5" onclick="openModal(this.src)">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="image-container">
+        <img src="https://via.placeholder.com/300x400/A6FF33" alt="Image 6" onclick="openModal(this.src)">
+      </div>
+    </div>
+  </div>
+</div>
 
-                    <a href="https://mudralegal.com" target="_blank" class="mudralegal-btn-visit">Visit MudraLegal.com</a>
-                </div>
+<!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <i class="fas fa-times close-icon" onclick="closeModal()"></i>
+      <img id="modalImage" class="modal-img" src="" alt="Full View">
+    </div>
+  </div>
+</div>
 
-                <!-- Right Image -->
-                <div class="mudralegal-col text-center">
-                    <img src="assets/images/mudralegal-banner.jpg" alt="MudraLegal" class="mudralegal-image img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Open modal and display clicked image
+  function openModal(src) {
+    const modalImage = document.getElementById('modalImage');
+    modalImage.src = src;
+    const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+    imageModal.show();
+  }
+
+  // Close modal
+  function closeModal() {
+    const imageModal = bootstrap.Modal.getInstance(document.getElementById('imageModal'));
+    imageModal.hide();
+  }
+
+  // Handle touch scroll for mobile
+  const imageContainers = document.querySelectorAll('.image-container');
+
+  imageContainers.forEach(container => {
+    let startY, scrollStart;
+
+    container.addEventListener('touchstart', e => {
+      startY = e.touches[0].clientY;
+      scrollStart = container.scrollTop;
+    });
+
+    container.addEventListener('touchmove', e => {
+      const moveY = e.touches[0].clientY;
+      container.scrollTop = scrollStart - (moveY - startY);
+    });
+  });
+</script>
+
 </body>
 </html>

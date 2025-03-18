@@ -50,7 +50,6 @@ h6 {
     font-weight: 700;
     color: #011a41;
     font-family: "Source Sans Pro", sans-serif;
-    line-height: 1.4;
 }
 
 p {
@@ -5520,4 +5519,33 @@ footer {
 .logo{
 width: 60px;
 height: 50px;
+}
+
+
+.appointment-area {
+    background: linear-gradient(to right, #e3ffe7, #d9e7ff);
+    padding: 80px 0;
+    border-radius: 15px;
+}
+
+.appointment-area h2 {
+    font-size: 36px;
+    color: black;
+}
+
+.appointment-area h4 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.appointment-area p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn-success, .btn-outline-success {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 50px;
 }
