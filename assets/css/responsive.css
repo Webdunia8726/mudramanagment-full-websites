@@ -1473,10 +1473,12 @@
 @media only screen and (max-width: 991px) {
     .mean-container .mean-bar {
         background-color: #011a41;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     .mobile-nav .logo {
         top: 0px;
-        max-width: 105px;
+        margin-top: 2px;
     }
     .mean-container a.meanmenu-reveal span {
         margin-top: 30px;
